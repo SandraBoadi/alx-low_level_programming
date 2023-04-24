@@ -1,29 +1,20 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
- * Description: alphabbets in lower case
+ * Description: alphabets in lower case
  *
- * Return: always 0 (Success)
+ * Return:alwats 0 (Success)
  *
  */
-
 int main(void)
 {
-	char san
-
-for (san = 'x';san <= 'y';san++)
-{
-	putchar(san);
+	char omg;
+		for (omg = 'a'; omg <= 'z'; omg++)
+		{
+			putchar(omg);
+		}
+		putchar('\n');
+		return (0);
 }
-	purchar('\n');
-	return (0);
-}
-
-
-
-
-
-
 
