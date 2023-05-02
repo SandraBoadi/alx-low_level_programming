@@ -1,23 +1,20 @@
 #include "main.h"
-
 /**
- * print_diagonal - drawing a diagonal line on terminal
- * @n: the character to be used
- * Return: always 0(Success)
- */
-void print_diagonal(int n)
+* more_numbers - printing numbers 10 times from 0 to 14
+* Return: void
+*/
+void more_numbers(void)
 {
-	int o, p
-                ;
-	if (n <= 0)
-		_putchar('\n');
-        for (o = 0; o < n; o++)
-        {
-                for (p = 0; p < o; p++)
-                {
-			_putchar(' ');
-		}
-		_putchar('\\');
-		_putchar('\n');
+	int s, b;
 
+	for (s = 1; s <= 10; s++)
+	{
+		for (b = 0; b <= 14; b++)
+		{
+			if (b >= 10)
+				_putchar('1');
+			_putchar(b % 10 + '0');
+		}
+		_putchar('\n');
+	}
 }
