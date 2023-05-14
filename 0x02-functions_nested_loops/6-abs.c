@@ -1,17 +1,14 @@
 #include "main.h"
 /**
- * _abs - computes the absolute value of an integrer
+ * _isalpha - Checks for alphabetic order
  *
- * @n: the int to check
+ * @c: alpabet to check for
  *
- * Return: the absolute value of int
- *
+ * Return: 1 if c is a letter, 0 otherwise
  */
-int _abs(int n)
+int _isalpha(int c)
 {
-	if (n >= 0)
-	{
-		return (n);
-	}
-	return (-n);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+
 }
+

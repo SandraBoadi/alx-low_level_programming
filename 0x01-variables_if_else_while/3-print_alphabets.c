@@ -2,19 +2,24 @@
 /**
  * main - Entry point
  *
- * Description: alphabets in lower case
+ * Description: alphabets in lowercase and uppercase
  *
  * Return:alwats 0 (Success)
  *
  */
 int main(void)
 {
-	char omg;
-		for (omg = 'a'; omg <= 'z'; omg++)
-		{
-			putchar(omg);
-		}
-		putchar('\n');
-		return (0);
+	char lc, up;
+	for (lc = 'a'; lc <= 'z'; lc++) 
+
+	{
+		putchar(lc);
+		for (up = 'A'; up <= 'Z'; up++)
+
+
+			putchar(up);
+	}
+	putchar('\n');
+	return (0);
 }
 
