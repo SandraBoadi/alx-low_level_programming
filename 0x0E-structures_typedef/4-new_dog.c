@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include "dog.h"
 
@@ -12,7 +11,7 @@ int _strlen(char *s)
 {
 	int m;
 
-	i = 0;
+	m = 0;
 
 	while (s[m] != '\0')
 	{
@@ -77,7 +76,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-}
 	dog->owner = malloc(sizeof(char) * (len2 + 1));
 	if (dog->owner == NULL)
 	{
