@@ -2,9 +2,9 @@
 
 /**
  * int_index - function that searches for an integer
- * @array - the array
- * @size - element size in array
- * @cmp - pointer to the function for camparison
+ * @array: the array
+ * @size: element size in array
+ * @cmp: pointer to the function for camparison
  * Return: -1 if no match,otherwie the index of the integer
  */
 int int_index(int *array, int size, int (*cmp)(int))
@@ -21,5 +21,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 			}
 		}
 	}
-	 return (-1);
+	return (-1);
 }
