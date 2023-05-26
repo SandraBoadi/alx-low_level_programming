@@ -4,36 +4,36 @@
 
 /**
  * main - prints the opcodes of its own
- * @argc 
-
-void printOpcodes(int numBytes);
-
-int main(int argc, char *argv[]) 
+ * @argc: the count
+ * @argv: the vector
+ * Return: 0
+ */
+int main(int argc, char *argv[])
 {
-    if (argc != 2) 
-    {
-        printf("Error\n");
-        return 1;
-    }
+	int s;
+	int res;
 
-    int numBytes = atoi(argv[1]);
-    if (numBytes < 0) {
-        printf("Error\n");
-        return 2;
-    }
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
 
-    printOpcodes(numBytes);
+	res = atoi(argv[1]);
+	if (res < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	unsigned char *ptr = (unsigned char *)&main;
 
-    return 0;
-}
-
-void printOpcodes(int numBytes) 
-{
-    unsigned char *mainPtr = (unsigned char *)main;
-    for (int i = 0; i < numBytes; i++) 
-    {
-        printf("%02x", mainPtr[i]);
-    }
-    printf("\n");
+	for (s = 0; s < res; s++)
+	{
+		printf("%02x", ptr[s]);
+		if (s == res - 1)
+			printf(" ");
+	}
+	printf("\n");
+	return (0);
 }
 
