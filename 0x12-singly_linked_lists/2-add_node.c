@@ -20,10 +20,10 @@ list_t *add_node(list_t **head, const char *str)
 	if (!latest)
 		return (NULL);
 
-	 latest->str = strdup(str);
-	 latest->len = len;
-	 latest->next = (*head);
-	 
-	 *(head) = latest;
-	 return (*head);
+	latest->str = strdup(str);
+	latest->len = len;
+	latest->next = *head;
+
+	*head = latest;
+	return *head;
 }
