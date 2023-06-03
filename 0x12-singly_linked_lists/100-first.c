@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-void before_main(void)'_attribute_'((constructor));
+void before_main(void)__attribute__((constructor));
 
 /**
  * before_main - runs before main function
  *
- * Return: nothing
+ * Return: void
  */
 void before_main(void)
 {
