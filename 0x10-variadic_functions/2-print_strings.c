@@ -3,11 +3,10 @@
 #include "variadic_functions.h"
 
 /**
- * print strings - print string and separator by a separator
- * @separator: sring variable
- * @n: unknown number of parameters
+ * print_strings - print string and separator by a separator
+ * @separator: sring sepaarato
+ * @n: number of parameters
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list myset;
